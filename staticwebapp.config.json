@@ -1,0 +1,8 @@
+{
+    "routes": [
+      {
+        "route": "/secret.html",
+        "allowedRoles":  ["reader"]
+      }
+    ]
+  }
