@@ -1,12 +1,12 @@
 module.exports = async function (context, req) {
     const queryObject = url.parse(req.url,true).query;
-    const rolesArray  = "";
+    var rolesArray  = "";
     if (queryObject.userId == '1234' && queryObject.provider == 'google') {
-        rolesArray.append("authenticated, reader");
+        rolesArray = "authenticated,reader";
     } else if (queryObject.userId == '1235' && queryObject.provider == 'google') {
-        rolesArray.append("contributor");
+        rolesArray = "contributor";
     } else {
-        rolesArray.append();
+        rolesArray = "";
     }
     context.res.json({
         roles: rolesArray
