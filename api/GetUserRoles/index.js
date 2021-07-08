@@ -1,3 +1,5 @@
+const url = require('url');
+
 module.exports = async function (context, req) {
     const queryObject = url.parse(req.url,true).query;
     var rolesArray  = "";
