@@ -2,11 +2,11 @@ const url = require('url');
 
 module.exports = async function (context, req) {
     const queryObject = url.parse(req.url,true).query;
-    var rolesArray  = "";
+    var rolesArray  = [];
     if (queryObject.userId == '1234' && queryObject.provider == 'google') {
-        rolesArray = "reader";
+        rolesArray.push("reader");
     } else if (queryObject.userId == '1235' && queryObject.provider == 'google') {
-        rolesArray = "contributor";
+        rolesArray.push("contributor");
     } else {
         rolesArray = rolesArray;
     }
