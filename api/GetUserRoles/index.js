@@ -11,6 +11,6 @@ module.exports = async function (context, req) {
         rolesArray = rolesArray;
     }
     context.res.json({
-        "roles": rolesArray
+        "userRoles": rolesArray
     });
 }; 
