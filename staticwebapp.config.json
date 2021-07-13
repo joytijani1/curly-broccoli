@@ -4,5 +4,8 @@
         "route": "/secret.html",
         "allowedRoles":  ["reader"]
       }
-    ]
+    ],
+    "postAuthenticationFunction" : {
+      "postAuthenticationFunction" : "GetUserRoles"
+    }
   }
