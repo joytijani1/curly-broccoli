@@ -5,7 +5,6 @@
         "allowedRoles":  ["reader"]
       }
     ],
-    "postAuthenticationFunction" : {
-      "postAuthenticationFunction" : "GetUserRoles"
-    }
+    "postAuthenticationFunction" : "GetUserRoles"
+
   }
