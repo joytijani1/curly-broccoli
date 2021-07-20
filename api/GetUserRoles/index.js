@@ -7,7 +7,7 @@ module.exports = async function (context, req) {
     const decoded = encoded.toString('ascii');
     const clientPrincipal = JSON.parse(decoded);
     var rolesArray  = [];
-    if (clientPrincipal.userId == 'd6b9de92ebba49a48e4888c54a3ee8ac' && clientPrincipal.provider == 'google') {
+    if (clientPrincipal.userId == 'd6b9de92ebba49a48e4888c54a3ee8ac' && clientPrincipal.identityProvider == 'google') {
         rolesArray.push("reader");
     } else if (clientPrincipal.userId == '1235' && clientPrincipal.identityProvider == 'google') {
         rolesArray.push("contributor");
