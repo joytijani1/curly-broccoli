@@ -3,7 +3,7 @@
     {
       "route": "/secret.html",
       "allowedRoles": [
-        "reader"
+        "joytestgroup"
       ]
     }
   ],
