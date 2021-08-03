@@ -8,6 +8,7 @@
     }
   ],
   "postAuthenticationFunction": "GetUserRoles",
+  "clientSecretSettingName": "AAD_CLIENT_SECRET",
   "auth": {
     "identityProviders": {
       "azureActiveDirectory": {
