@@ -8,10 +8,9 @@ module.exports = async function (context, req) {
     const decoded = encoded.toString('ascii');
     const clientPrincipal = JSON.parse(decoded);
     var rolesArray = [];
-    rolesArray.push("reader");
     let id = clientPrincipal.userId;
     let tok = clientPrincipal.accessToken;
-    /*let response = await fetch(`https://graph.microsoft.com/v1.0/users/${id}/memberOf`, {
+    let response = await fetch(`https://graph.microsoft.com/v1.0/users/${id}/memberOf`, {
         method: 'GET',
         headers: {
             'Authorization': 'Bearer ' + tok,
@@ -22,7 +21,7 @@ module.exports = async function (context, req) {
     for (let x of json.value) {
         console.log(x.displayName);
         rolesArray.push(x.displayName);
-    } */
+    } 
     //console.log(response.json);
     console.log(rolesArray);
 
