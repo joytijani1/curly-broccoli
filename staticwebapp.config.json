@@ -3,7 +3,7 @@
     {
       "route": "/secret.html",
       "allowedRoles": [
-        "reader"
+        "joytestgroup"
       ]
     }
   ],
@@ -14,7 +14,8 @@
         "enabled": true,
         "registration": {
           "openIdIssuer": "https://login.microsoftonline.com/common/v2.0",
-          "clientId": "8415003b-d458-48ff-8ad9-badcc7d5af1d"
+          "clientId": "8415003b-d458-48ff-8ad9-badcc7d5af1d",
+          "clientSecretSettingName": "AAD_CLIENT_SECRET",
         }
       }
     }
