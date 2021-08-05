@@ -4,7 +4,9 @@
       "route": "/secret.html",
       "allowedRoles": [
         "joytestgroup"
-      ],
+      ]
+    },
+    {
       "route": "/intern.html",
       "allowedRoles": [
         "Internz"
