@@ -8,7 +8,7 @@ module.exports = async function (context, req) {
     var rolesArray = [];
     let id = clientPrincipal.userId;
     let tok = clientPrincipal.accessToken;
-    let response = await fetch(`https://graph.microsoft.com/v1.0/users/me/memberOf`, {
+    let response = await fetch(`https://graph.microsoft.com/v1.0/me/memberOf?`, {
         method: 'GET',
         headers: {
             'Authorization': 'Bearer ' + tok,
