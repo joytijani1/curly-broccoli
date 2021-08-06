@@ -20,7 +20,8 @@
         "enabled": true,
         "registration": {
           "openIdIssuer": "https://login.microsoftonline.com/common/v2.0",
-          "clientId": "ea05f959-6b54-49e8-82c1-78c9cc2ec1df"
+          "clientId": "ea05f959-6b54-49e8-82c1-78c9cc2ec1df",
+          "clientSecretSettingName": "AAD_CLIENT_SECRET_2"
         }
       }
     }
