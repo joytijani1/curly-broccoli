@@ -7,9 +7,9 @@
       ]
     },
     {
-      "route": "/intern.html",
+      "route": "/noaccess.html",
       "allowedRoles": [
-        "Internz"
+        "admin"
       ]
     }
   ],
